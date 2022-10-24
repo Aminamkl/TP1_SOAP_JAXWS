@@ -82,10 +82,12 @@ return amount / 11;
 
 ## WSDL Schema
 
-![image](https://user-images.githubusercontent.com/62752474/180603483-1d191988-56fc-4c65-a6e2-599b84273b3b.png)
+![image](https://user-images.githubusercontent.com/52087288/197517761-179ac005-3f7a-45ef-8130-87ef46114406.png)
+
 ## XML Schema Definition
 
-![image](https://user-images.githubusercontent.com/62752474/180603492-6147ae8e-fc81-4675-ae82-4e22f93a4bb6.png)
+![image](https://user-images.githubusercontent.com/52087288/197518031-48f2a240-8f54-48c2-bc51-0d9cd82583a5.png)
+
 
 ## Testing SOAP web service with SoapUI tool
 
