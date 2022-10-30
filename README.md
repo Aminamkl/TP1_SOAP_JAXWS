@@ -126,3 +126,45 @@ public class BanqueService {
 ### Get Account Response 
 
 ![image](https://user-images.githubusercontent.com/62752474/180603571-fb231739-5409-4929-8fb8-9e0f9f700a17.png)
+
+# JAVA SOAP Client
+
+## Generate Proxy (Java classes) from WSDL Schema
+
+![1](https://user-images.githubusercontent.com/52087288/198906874-6253f2cf-f9ae-4db6-bdc4-592af0b473f4.PNG)
+
+## Generated code
+
+![image](https://user-images.githubusercontent.com/52087288/198906865-c4fc6748-87a2-4e0c-aa99-18b58cf808a2.png)
+
+
+
+## invoke methods of web service from jva soup client
+
+```java
+public class ClientWS {
+    public static void main(String[] args) {
+        BanqueService bankWS = new BanqueWS().getBanqueServicePort();
+        System.out.println("\n---------------Convert Dh to Euro");
+        double response = bankWS.conversionEuroToDH(30);
+        System.out.println(response);
+        System.out.println("\n---------------Get Account------------------------");
+        Compte account = bankWS.getCompte(1L);
+        System.out.println(account.getCode());
+        System.out.println(account.getSolde());
+        System.out.println(account.isActive());
+        System.out.println("\n---------------Get Accounts------------------------");
+        List<Compte> accounts = bankWS.listeComptes();
+        accounts.forEach(account1 -> {
+            System.out.println(account1.getCode());
+            System.out.println(account1.getSolde());
+            System.out.println(account1.isActive());
+            System.out.println("************");
+        });
+    }
+}
+```
+### Le résultat 
+![image](https://user-images.githubusercontent.com/52087288/198907230-2fa7ccbf-6956-4966-8092-40d1b5ae4354.png)
+
+
