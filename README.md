@@ -3,56 +3,74 @@
 
 ## Jax Web Service Server
 ```java
-public class JaxWSServer {
+public class ServeurJaxWs {
     public static void main(String[] args) {
-        String url = "http://0.0.0.0:8585/";
-        Endpoint.publish(url, new BankService());
-        System.out.println("Web service running in "+ url);
+        String url="http://0.0.0.0:8585/";
+        Endpoint.publish(url,new BanqueService());
+        System.out.println("Webservices deploye sur l'adresse:"+url);
     }
 }
 ``` 
 
-## Account Class
+## Class Compte
 
 ```java
-@XmlRootElement(name = "account")
+package org.example.ws;
+
+
+import javax.xml.bind.annotation.*;
+import java.util.Date;
+
+@XmlRootElement(name = "Compte")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Account {
-@XmlAttribute
-private Long id;
-@XmlElement
-private double balance;
-private Date creationDate;
-private boolean active;
-    public Account() {
+public class Compte {
+
+    @XmlAttribute
+    private Long code;
+    @XmlElement
+    private double solde;
+    @XmlTransient
+    private Date dateCreation;
+    private boolean active;
+
+    public Compte() {
     }
-    public Account(Long id, double balance, Date creationDate, boolean active) {
-        this.id = id;
-        this.balance = balance;
-        this.creationDate = creationDate;
+
+    public Compte(Long code, double solde, Date dateCreation, boolean active) {
+        this.code = code;
+        this.solde = solde;
+        this.dateCreation = dateCreation;
         this.active = active;
     }
-    public Long getId() {
-        return id;
+
+    public Long getCode() {
+        return code;
     }
-    public void setId(Long id) {
-        this.id = id;
+
+    public void setCode(Long code) {
+        this.code = code;
     }
-    public double getBalance() {
-        return balance;
+
+    public double getSolde() {
+        return solde;
     }
-    public void setBalance(double balance) {
-        this.balance = balance;
+
+    public void setSolde(double solde) {
+        this.solde = solde;
     }
-    public Date getCreationDate() {
-        return creationDate;
+
+    public Date getDateCreation() {
+        return dateCreation;
     }
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
+
+    public void setDateCreation(Date dateCreation) {
+        this.dateCreation = dateCreation;
     }
+
     public boolean isActive() {
         return active;
     }
+
     public void setActive(boolean active) {
         this.active = active;
     }
@@ -61,21 +79,25 @@ private boolean active;
 
 ## BankService Class
 ```java
-@WebService(name = "bankWS")
-public class BankService {
-@WebMethod(operationName = "conversionDHToEuro")
-public double conversion(@WebParam(name = "amount") double amount){
-return amount / 11;
-}
-    public Account getAccount(@WebParam(name = "accountId") Long id){
-        return  new Account(id,Math.random()*8000,new Date(), true);
+@WebService(serviceName = "BanqueWS")
+public class BanqueService {
+
+    @WebMethod(operationName = "ConversionEuroToDH")
+    public double conversion(@WebParam(name = "montant") double mt){
+        return mt*11.3;
     }
-    public List<Account> getAccounts(){
-        List<Account> accounts = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            accounts.add(new Account((long) (i + 1),Math.random()*8000,new Date(), true));
-        }
-      return accounts;
+    @WebMethod
+    public Compte getCompte(@WebParam(name = "code") Long code){
+        return new Compte(code,Math.random()*80000,new Date(),true);
+    }
+    @WebMethod
+    public List<Compte> listeComptes(){
+        List<Compte> comptes = new ArrayList<>();
+        comptes.add(new Compte(1L,Math.random()*80000,new Date(),true));
+        comptes.add(new Compte(2L,Math.random()*80000,new Date(),true));
+        comptes.add(new Compte(3L,Math.random()*80000,new Date(),true));
+
+        return comptes;
     }
 }
 ``` 
