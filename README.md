@@ -1,4 +1,3 @@
-# TP_SOAP
 # Web Service SOAP with JaxWS
 
 ## Jax Web Service Server
