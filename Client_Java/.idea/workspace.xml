@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c935ae6-7855-4010-89f3-208625f0d6d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/.wsdl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/BanqueService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/BanqueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/BanqueWS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/BanqueWS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/Compte.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/Compte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ConversionEuroToDH.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ConversionEuroToDH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ConversionEuroToDHResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ConversionEuroToDHResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/GetCompte.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/GetCompte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/GetCompteResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/GetCompteResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ListeComptes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ListeComptes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ListeComptesResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ListeComptesResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ObjectFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/package-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mypackage/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SOAP-JaxWS_WebServices/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SOAP-JaxWS_WebServices/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667170852592</updated>
-      <workItem from="1667170854337" duration="1633000" />
+      <workItem from="1667170854337" duration="2317000" />
     </task>
     <servers />
   </component>
