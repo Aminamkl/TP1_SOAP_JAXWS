@@ -1,0 +1,7 @@
+{
+  "require": {
+    "ext-soap": "*",
+    "ext-curl": "*",
+    "ext-simplexml": "*"
+  }
+}

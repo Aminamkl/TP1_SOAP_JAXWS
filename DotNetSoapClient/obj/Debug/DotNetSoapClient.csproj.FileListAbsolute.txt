@@ -1,0 +1,6 @@
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/bin/Debug/DotNetSoapClient.exe
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/bin/Debug/DotNetSoapClient.pdb
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/obj/Debug/DotNetSoapClient.csproj.AssemblyReference.cache
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/obj/Debug/DotNetSoapClient.csproj.CoreCompileInputs.cache
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/obj/Debug/DotNetSoapClient.exe
+/Users/yassine/GitHub/MyFifthSemesterAtGlsid/AOS/MyFullSoapActivity/DotNetSoapClient/obj/Debug/DotNetSoapClient.pdb
